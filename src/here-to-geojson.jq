@@ -1,4 +1,4 @@
-jq '{
+{
     type: "FeatureCollection",
     features: [
         .items[] | {
@@ -17,4 +17,4 @@ jq '{
             }
         }
     ]
-}'
+}

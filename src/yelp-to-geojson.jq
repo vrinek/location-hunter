@@ -1,20 +1,20 @@
-jq '{
+{
     type: "FeatureCollection",
     features: [
-        .response.venues[] | {
+        .businesses[] | {
             type: "Feature",
             geometry: {
                 type: "Point",
                 coordinates: [
-                    .location.lng,
-                    .location.lat
+                    .coordinates.longitude,
+                    .coordinates.latitude
                 ]
             },
             properties: {
                 title: .name,
-                "marker-symbol": "f",
-                "marker-color": "#fa4778"
+                "marker-symbol": "y",
+                "marker-color": "#bf2519"
             }
         }
     ]
-}'
+}
