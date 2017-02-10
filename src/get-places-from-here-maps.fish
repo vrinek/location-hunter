@@ -5,7 +5,7 @@ echo "Getting page 1..."
 
 curl -s "https://places.cit.api.here.com/places/v1/discover/search\
 ?at=$LATITUDE%2C$LONGITUDE\
-&q=$SEARCH_QUERY\
+&q=$HERE_SEARCH_QUERY\
 &app_id=$HERE_APP_ID&app_code=$HERE_APP_CODE" | jq -r '.results' > tmp/places-from-here-maps-1.json
 
 set page 1
