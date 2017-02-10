@@ -1,5 +1,5 @@
 set SEARCH_QUERY "gym"
 
-# Barcelona center
-set LATITUDE "42.38561"
-set LONGITUDE "2.16873"
+# Barcelona, Plaça de Catalunya
+set LATITUDE "41.387"
+set LONGITUDE "2.17"
